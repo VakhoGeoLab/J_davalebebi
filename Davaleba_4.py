@@ -21,8 +21,6 @@ def main():
                 var_list.append(int(var))
                 print(var_list)
 
-
-
                 max_list = max(var_list)
                 min_list = min(var_list)
 
