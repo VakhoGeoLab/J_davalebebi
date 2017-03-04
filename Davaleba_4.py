@@ -1,26 +1,13 @@
 import sys
 
-
-
-
 def get_number():
     print('hi')
 
-
-
-
 def main():
 
-
-
     def hello():
-
-
         var = 1
-
         var_list = []
-
-
 
         while True:
             var = input("Es programa poulobs udides da umceres ricxvebs. \nSheikvane ricxvi: ")
@@ -42,11 +29,6 @@ def main():
                 print("Minimaluri: ", min_list)
                 print("Maximaluri: ", max_list)
 
-
-
     hello()
-
-
-
 
 main()
