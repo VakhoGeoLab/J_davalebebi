@@ -19,7 +19,7 @@ def main():
 
     sentence = "trakshi pari"
 
-    acronym(sentece)
+    acronym(sentence)
 
 
 main()
