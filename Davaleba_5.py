@@ -17,7 +17,7 @@ def acronym(string):
 def main():
     #print("hello world")
 
-    sentence = "trakshi pari"
+    sentence = "trakshi pari draki"
 
     acronym(sentence)
 
