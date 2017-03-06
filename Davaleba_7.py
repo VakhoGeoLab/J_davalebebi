@@ -20,27 +20,41 @@ def cezar(text, biji):
 
     for item in text:
         code_char.append(item)
-        numb.append(anbani_list.index(item))
+
+        if item == " ":
+            numb.append(item)
+        else:
+            numb.append(anbani_list.index(item))
 
 
     for item in numb:
-        result.append(item+biji)
+        if item == " ":
+            result.append(item)
+        else:
+            result.append(item+biji)
 
 
     for item in result:
-        if item < len(anbani_list):
-            resultword.append(anbani_list[item])
+        if item == " ":
+            resultword.append(item)
         else:
-            ricxvi = item-len(anbani_list)
-            resultword.append(anbani_list[ricxvi])
+            if item < len(anbani_list):
+                resultword.append(anbani_list[item])
+            else:
+                ricxvi = item-len(anbani_list)
+                resultword.append(anbani_list[ricxvi])
     print(resultword)
+
+    word_string = "".join(resultword)
+
+    print(word_string)
 
 
 
 
 
 def main():
-    cezar("kvati",15)
+    cezar("kvati vakho",15)
 
 
 main()
