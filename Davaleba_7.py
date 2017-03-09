@@ -1,60 +1,39 @@
 
 anbani = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-anbani_list = []
-
-
-
-for char in anbani:
-    anbani_list.append(char)
 
 
 def cezar(text, biji):
 
     text = text.upper()
-    code_char = []
-    numb = []
-    result = []
-    resultword = []
 
+    result_numbers = []
+    result_code = []
 
     for item in text:
-        code_char.append(item)
-
         if item == " ":
-            numb.append(item)
+            result_code.append(item)
         else:
-            numb.append(anbani_list.index(item))
-
-
-    for item in numb:
-        if item == " ":
-            result.append(item)
-        else:
-            result.append(item+biji)
-
-
-    for item in result:
-        if item == " ":
-            resultword.append(item)
-        else:
-            if item < len(anbani_list):
-                resultword.append(anbani_list[item])
+            number = (anbani.index(item) + biji)
+            result_numbers.append(number)
+            if number < len(anbani):
+                result_code.append(anbani[number])
             else:
-                ricxvi = item-len(anbani_list)
-                resultword.append(anbani_list[ricxvi])
-    print(resultword)
+                number = number - len(anbani)
+                result_code.append(anbani[number])
 
-    word_string = "".join(resultword)
+    print(result_code)
+
+
+    word_string = "".join(result_code)
 
     print(word_string)
 
 
 
 
-
 def main():
-    cezar("kvati vakho",15)
+    cezar("kvati vakho",2)
 
 
 main()
